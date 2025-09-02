@@ -1,0 +1,311 @@
+/**
+ * Admin styles for Ultimate WordPress Backup Migration
+ */
+
+/* Dashboard Styles */
+.uwpbm-dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.uwpbm-card {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.uwpbm-card h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #23282d;
+}
+
+/* Quick Actions */
+.uwpbm-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.uwpbm-actions .button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 40px;
+}
+
+/* Status Grid */
+.uwpbm-status-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.uwpbm-status-item h3 {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+    color: #666;
+    font-weight: 600;
+}
+
+.uwpbm-status-value {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #23282d;
+}
+
+/* Progress Bar */
+.uwpbm-progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #f0f0f1;
+    border-radius: 4px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.uwpbm-progress-fill {
+    height: 100%;
+    background: #00a32a;
+    transition: width 0.3s ease;
+}
+
+/* Status Badges */
+.uwpbm-status {
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.uwpbm-status-completed {
+    background: #d4edda;
+    color: #155724;
+}
+
+.uwpbm-status-running {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.uwpbm-status-failed {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.uwpbm-status-pending {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+/* System Info */
+.uwpbm-info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f1;
+}
+
+.uwpbm-info-row:last-child {
+    border-bottom: none;
+}
+
+.uwpbm-info-label {
+    font-weight: 600;
+    color: #23282d;
+}
+
+.uwpbm-info-value {
+    color: #666;
+}
+
+/* Form Styles */
+.uwpbm-form-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+}
+
+.uwpbm-form-section h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #23282d;
+}
+
+.uwpbm-form-row {
+    margin-bottom: 15px;
+}
+
+.uwpbm-form-row label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #23282d;
+}
+
+.uwpbm-form-row input,
+.uwpbm-form-row select,
+.uwpbm-form-row textarea {
+    width: 100%;
+    max-width: 400px;
+}
+
+.uwpbm-form-row .description {
+    margin-top: 5px;
+    font-size: 13px;
+    color: #666;
+    font-style: italic;
+}
+
+/* Connection Test */
+.uwpbm-connection-test {
+    margin-top: 15px;
+    padding: 15px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+.uwpbm-connection-test.success {
+    background: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.uwpbm-connection-test.error {
+    background: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+/* Progress Modal */
+.uwpbm-progress-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 100000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.uwpbm-progress-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+.uwpbm-progress-content h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.uwpbm-progress-bar-large {
+    width: 100%;
+    height: 20px;
+    background: #f0f0f1;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.uwpbm-progress-fill-large {
+    height: 100%;
+    background: linear-gradient(90deg, #00a32a, #4caf50);
+    transition: width 0.3s ease;
+    border-radius: 10px;
+}
+
+.uwpbm-progress-text {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .uwpbm-dashboard {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 782px) {
+    .uwpbm-status-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .uwpbm-actions {
+        flex-direction: column;
+    }
+    
+    .uwpbm-actions .button {
+        justify-content: center;
+    }
+    
+    .uwpbm-form-row input,
+    .uwpbm-form-row select,
+    .uwpbm-form-row textarea {
+        max-width: none;
+    }
+}
+
+/* Loading Spinner */
+.uwpbm-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #0073aa;
+    border-radius: 50%;
+    animation: uwpbm-spin 1s linear infinite;
+}
+
+@keyframes uwpbm-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Notifications */
+.uwpbm-notice {
+    padding: 12px;
+    margin: 15px 0;
+    border-left: 4px solid;
+    background: #fff;
+}
+
+.uwpbm-notice.success {
+    border-left-color: #00a32a;
+    background: #f0f8f0;
+}
+
+.uwpbm-notice.error {
+    border-left-color: #dc3232;
+    background: #fdf0f0;
+}
+
+.uwpbm-notice.warning {
+    border-left-color: #ffb900;
+    background: #fffbf0;
+}
+
+.uwpbm-notice.info {
+    border-left-color: #0073aa;
+    background: #f0f6fc;
+}
