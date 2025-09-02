@@ -64,7 +64,7 @@ The ultimate WordPress migration and backup solution with unlimited file sizes, 
 ### Method 3: Git Clone (Development)
 ```bash
 cd /path/to/wordpress/wp-content/plugins/
-git clone https://github.com/uwpbm/ultimate-wp-backup-migration.git
+git clone https://github.com/StouteWebSolutions/ultimate-wp-backup-migration.git
 ```
 
 ## 🛠️ Quick Start
@@ -197,7 +197,7 @@ the Free Software Foundation; either version 3 of the License, or
 ## 🆘 Support
 
 - **Documentation:** [Installation Guide](INSTALLATION_GUIDE.md)
-- **Issues:** [GitHub Issues](https://github.com/uwpbm/ultimate-wp-backup-migration/issues)
+- **Issues:** [GitHub Issues](https://github.com/StouteWebSolutions/ultimate-wp-backup-migration/issues)
 - **WordPress Support:** [Plugin Support Forum](https://wordpress.org/support/plugin/ultimate-wp-backup-migration/)
 
 ## 🏆 Acknowledgments

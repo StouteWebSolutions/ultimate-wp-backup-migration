@@ -10,7 +10,7 @@ The plugin is now **production-ready** with all core features implemented. Here'
 
 1. **Zip the Plugin Directory:**
    ```bash
-   cd /Users/paulstoute/Development/WordPress/uwpbm
+   cd /path/to/development/directory
    zip -r ultimate-wp-backup-migration.zip ultimate-wp-backup-migration/
    ```
 
@@ -23,7 +23,7 @@ The plugin is now **production-ready** with all core features implemented. Here'
 
 1. **Copy Plugin Directory:**
    ```bash
-   cp -r /Users/paulstoute/Development/WordPress/uwpbm/ultimate-wp-backup-migration /path/to/wordpress/wp-content/plugins/
+   cp -r /path/to/development/ultimate-wp-backup-migration /path/to/wordpress/wp-content/plugins/
    ```
 
 2. **Activate in WordPress:**
